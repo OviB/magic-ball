@@ -1,0 +1,5 @@
+
+Goal:
+    Add a detailView where user will be able to change the background color
+    and later upload a custom image as the ball.
+

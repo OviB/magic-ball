@@ -53,8 +53,8 @@ class MainVC: UIViewController, AVAudioPlayerDelegate {
 
     @IBAction func answerTapped(sender: AnyObject) {
         
+        // Get random answer and update text
         let random = Int(arc4random_uniform(UInt32(answers.count)))
-        
         answerLabel.text = answers[random]
         
         do {
@@ -62,6 +62,10 @@ class MainVC: UIViewController, AVAudioPlayerDelegate {
         } catch {
             return
         }
+    }
+    
+    override func motionBegan(motion: UIEventSubtype, withEvent event: UIEvent?) {
+        answerTapped(self)
     }
     
     func playSound(fileName: String, fileExtension: String) throws {
@@ -95,11 +99,8 @@ class MainVC: UIViewController, AVAudioPlayerDelegate {
                     //self.audioPlayer = nil
                     return
                 }
-                
             }
-            
         })
-        
     }
 }
 

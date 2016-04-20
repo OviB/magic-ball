@@ -15,6 +15,7 @@
 		EF1A5F4B1CC720ED00A680EB /* Magic8BallUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1A5F4A1CC720ED00A680EB /* Magic8BallUITests.swift */; };
 		EF1A5F591CC7232000A680EB /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1A5F581CC7232000A680EB /* MainVC.swift */; };
 		EF1A5F5B1CC72A7A00A680EB /* Shakesound.wav in Resources */ = {isa = PBXBuildFile; fileRef = EF1A5F5A1CC72A7A00A680EB /* Shakesound.wav */; };
+		EF1A5F5D1CC739EF00A680EB /* worklog.txt in Resources */ = {isa = PBXBuildFile; fileRef = EF1A5F5C1CC739EF00A680EB /* worklog.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		EF1A5F4C1CC720ED00A680EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EF1A5F581CC7232000A680EB /* MainVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainVC.swift; path = ../MainVC.swift; sourceTree = "<group>"; };
 		EF1A5F5A1CC72A7A00A680EB /* Shakesound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Shakesound.wav; sourceTree = "<group>"; };
+		EF1A5F5C1CC739EF00A680EB /* worklog.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = worklog.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				EF1A5F331CC720ED00A680EB /* LaunchScreen.storyboard */,
 				EF1A5F361CC720ED00A680EB /* Info.plist */,
 				EF1A5F5A1CC72A7A00A680EB /* Shakesound.wav */,
+				EF1A5F5C1CC739EF00A680EB /* worklog.txt */,
 			);
 			path = Magic8Ball;
 			sourceTree = "<group>";
@@ -234,6 +237,7 @@
 			files = (
 				EF1A5F351CC720ED00A680EB /* LaunchScreen.storyboard in Resources */,
 				EF1A5F321CC720ED00A680EB /* Assets.xcassets in Resources */,
+				EF1A5F5D1CC739EF00A680EB /* worklog.txt in Resources */,
 				EF1A5F301CC720ED00A680EB /* Main.storyboard in Resources */,
 				EF1A5F5B1CC72A7A00A680EB /* Shakesound.wav in Resources */,
 			);
