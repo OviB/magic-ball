@@ -8,12 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		EF1A5F2B1CC720EC00A680EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1A5F2A1CC720EC00A680EB /* AppDelegate.swift */; };
-		EF1A5F2D1CC720EC00A680EB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1A5F2C1CC720EC00A680EB /* ViewController.swift */; };
 		EF1A5F301CC720ED00A680EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF1A5F2E1CC720ED00A680EB /* Main.storyboard */; };
 		EF1A5F321CC720ED00A680EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF1A5F311CC720ED00A680EB /* Assets.xcassets */; };
 		EF1A5F351CC720ED00A680EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF1A5F331CC720ED00A680EB /* LaunchScreen.storyboard */; };
 		EF1A5F401CC720ED00A680EB /* Magic8BallTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1A5F3F1CC720ED00A680EB /* Magic8BallTests.swift */; };
 		EF1A5F4B1CC720ED00A680EB /* Magic8BallUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1A5F4A1CC720ED00A680EB /* Magic8BallUITests.swift */; };
+		EF1A5F591CC7232000A680EB /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1A5F581CC7232000A680EB /* MainVC.swift */; };
+		EF1A5F5B1CC72A7A00A680EB /* Shakesound.wav in Resources */ = {isa = PBXBuildFile; fileRef = EF1A5F5A1CC72A7A00A680EB /* Shakesound.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +37,6 @@
 /* Begin PBXFileReference section */
 		EF1A5F271CC720EC00A680EB /* Magic8Ball.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Magic8Ball.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF1A5F2A1CC720EC00A680EB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EF1A5F2C1CC720EC00A680EB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		EF1A5F2F1CC720ED00A680EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EF1A5F311CC720ED00A680EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EF1A5F341CC720ED00A680EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +47,8 @@
 		EF1A5F461CC720ED00A680EB /* Magic8BallUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Magic8BallUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF1A5F4A1CC720ED00A680EB /* Magic8BallUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Magic8BallUITests.swift; sourceTree = "<group>"; };
 		EF1A5F4C1CC720ED00A680EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF1A5F581CC7232000A680EB /* MainVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
+		EF1A5F5A1CC72A7A00A680EB /* Shakesound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Shakesound.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 		EF1A5F1E1CC720EB00A680EB = {
 			isa = PBXGroup;
 			children = (
+				EF1A5F581CC7232000A680EB /* MainVC.swift */,
 				EF1A5F291CC720EC00A680EB /* Magic8Ball */,
 				EF1A5F3E1CC720ED00A680EB /* Magic8BallTests */,
 				EF1A5F491CC720ED00A680EB /* Magic8BallUITests */,
@@ -98,11 +101,11 @@
 			isa = PBXGroup;
 			children = (
 				EF1A5F2A1CC720EC00A680EB /* AppDelegate.swift */,
-				EF1A5F2C1CC720EC00A680EB /* ViewController.swift */,
 				EF1A5F2E1CC720ED00A680EB /* Main.storyboard */,
 				EF1A5F311CC720ED00A680EB /* Assets.xcassets */,
 				EF1A5F331CC720ED00A680EB /* LaunchScreen.storyboard */,
 				EF1A5F361CC720ED00A680EB /* Info.plist */,
+				EF1A5F5A1CC72A7A00A680EB /* Shakesound.wav */,
 			);
 			path = Magic8Ball;
 			sourceTree = "<group>";
@@ -232,6 +235,7 @@
 				EF1A5F351CC720ED00A680EB /* LaunchScreen.storyboard in Resources */,
 				EF1A5F321CC720ED00A680EB /* Assets.xcassets in Resources */,
 				EF1A5F301CC720ED00A680EB /* Main.storyboard in Resources */,
+				EF1A5F5B1CC72A7A00A680EB /* Shakesound.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,8 +260,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EF1A5F2D1CC720EC00A680EB /* ViewController.swift in Sources */,
 				EF1A5F2B1CC720EC00A680EB /* AppDelegate.swift in Sources */,
+				EF1A5F591CC7232000A680EB /* MainVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

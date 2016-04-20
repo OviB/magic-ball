@@ -1,25 +1,80 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="koi-Lk-UaN">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Shake for Answer-->
+        <scene sceneID="csE-sF-PvU">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="hZg-eO-l8v" customClass="MainVC" customModule="Magic8Ball" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                        <viewControllerLayoutGuide type="top" id="HHu-c4-2Dg"/>
+                        <viewControllerLayoutGuide type="bottom" id="TvF-KX-nzq"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleToFill" id="HU5-LN-n3W">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ball" translatesAutoresizingMaskIntoConstraints="NO" id="yjW-4f-ia8">
+                                <rect key="frame" x="120" y="120" width="360" height="360"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="360" id="ARq-u8-ntc"/>
+                                    <constraint firstAttribute="width" constant="360" id="NyO-4V-77U"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tIu-yO-6AN">
+                                <rect key="frame" x="260" y="550" width="80" height="30"/>
+                                <state key="normal" title="Get Answer"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bbz-kq-tPx">
+                                <rect key="frame" x="171" y="193" width="259" height="213"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="259" id="A5l-Iu-uUS"/>
+                                    <constraint firstAttribute="height" constant="213" id="Jbj-WS-n3N"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="32"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <size key="shadowOffset" width="2" height="2"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Bbz-kq-tPx" firstAttribute="centerX" secondItem="yjW-4f-ia8" secondAttribute="centerX" id="1bV-8d-MS2"/>
+                            <constraint firstItem="yjW-4f-ia8" firstAttribute="centerY" secondItem="HU5-LN-n3W" secondAttribute="centerY" id="Hrk-5N-VGB"/>
+                            <constraint firstItem="Bbz-kq-tPx" firstAttribute="centerY" secondItem="yjW-4f-ia8" secondAttribute="centerY" id="T20-MH-Pag"/>
+                            <constraint firstItem="yjW-4f-ia8" firstAttribute="centerX" secondItem="HU5-LN-n3W" secondAttribute="centerX" id="b6u-xy-2KL"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Shake for Answer" id="UVO-Ve-pGa"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mdE-oQ-sB3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1433" y="423"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Lah-Nw-TAJ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="koi-Lk-UaN" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="d0o-fe-oJr">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="hZg-eO-l8v" kind="relationship" relationship="rootViewController" id="Lan-R1-bdG"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Pms-6y-nSi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="621" y="423"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="ball" width="402" height="402"/>
+    </resources>
 </document>
